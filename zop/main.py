@@ -13,6 +13,7 @@ html ="""
 """
 configure(locals())
 @route('',name='home')
+
 def homepage(request):
     name = request.GET.get('name','world')
     return HttpResponse(html)
